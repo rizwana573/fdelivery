@@ -1,0 +1,231 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Roboto', Helvetica;
+    background: #ccc;
+}
+
+nav {
+    background-color: peachpuff;
+    height: 86px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    /* border-bottom: 1px solid rgb(238, 238, 238); */
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.headerLeft {
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    width: auto;
+}
+
+.headerRight {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    gap: 5px;
+}
+
+.loginBtn {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 86px;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s;
+}
+
+.bright {
+    color: red;
+    display: block;
+}
+
+.loginBtn .btn,
+.exploreBtn .btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: Roboto;
+    transition: font-size 0.5s ease 0s;
+    background: red;
+}
+
+.cartBtn {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 86px;
+    display: flex;
+}
+
+.cartBtn .fa-cart-shopping:hover {
+    animation: 0.6s ease 0s 2 normal none running cartHover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menuList ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    padding: 0;
+    /* align-items: flex-end; */
+}
+
+.menuList ul li {
+    margin: 0 9px;
+    margin: 0 6px;
+    margin: 0 12px;
+    /* flex: 1; */
+}
+
+.menuList ul li:first-child {
+    margin-left: 0;
+}
+
+.menuList ul li:last-child {
+    margin-right: 0;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mainContent {
+    /* max-width: 800px; */
+    margin:85px auto 30px;
+    background: pink;
+}
+.heroBanner{
+    display: flex;
+    align-items: center;
+    max-width: 775px;
+    margin: 0 auto;
+}
+.searchbarContainer {
+    margin-top: 30px;
+    background: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 30px;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    margin-right: 5px;
+}
+
+a.fdLogo {
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+}
+
+button.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 5px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+i.fa-solid.fa-cart-shopping {
+    margin-right: 7px;
+}
+
+.bannerDesc {
+    margin-right: 30px;
+    flex: 1.5;
+}
+
+.banner {
+    flex: 3;
+}
+
+h2.bannerTitle {
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+section#shop {
+    background: #ececec;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+section#recipes {
+    background: #ececec;
+    padding: 60px;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+#recipes h2 {
+    display: block;
+    font-weight: 700;
+}
+
+ul.recipesList {
+    margin: 15px auto 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipesList li {
+    margin: 0 10px;
+}
